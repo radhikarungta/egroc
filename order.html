@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Order</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="./css/nav.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  color:white;
+
+}
+
+.order-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #00b09b;
+  color: white;
+
+
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color:#00b09b;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+ background-color:#96c93d;
+}
+
+.logo{
+    width: 300px;
+    position:absolute;
+    top: 5%;
+    left:5%;
+
+}
+</style>
+</head>
+<body>
+<div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="About.html">ABOUT US</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="login.html">LOGOUT</a></li>
+            </ul>
+        </nav>
+</div>
+    <div id="menubtn">
+        <img src="./images/menu.png" id="menu">
+    </div>
+    <div class="order-section">
+      <h1 style="font-size: 45px; text-align: center; font-family: cursive">HOW TO ORDER?!</h1>
+      <br>
+      <br>
+      <h2 style="text-align: center;"><u>FOLLOW THE THREE C's</u></h2>
+            <br>
+            <br>
+            <br>
+            <img src="./images/logo.svg" class="logo">
+            <p>
+              <h2><i class="fa fa-share fa-2x" aria-hidden="true"></i><a href="index.html">CLICK</a><br>
+                Click on the category as per your requirement.</h2>
+              <br>
+              <br>
+              <br>
+              <h2><i class="fa fa-shopping-basket fa-2x" aria-hidden="true"></i><a href="menu.html">CHOOSE</a><br>
+                Choose from the particular  list where prices are mentioned.</h2>
+              <br>
+              <br>
+              <br>
+              <h2><i class="fa fa-phone fa-2x" aria-hidden="true"></i><a href="contact.html">CALL</a><br>
+                Call us and place your order by providing us with your location.<br> 
+                We will be at your service within 45 mins.</h2>
+              <br>
+              </p>
+              <footer class="footer">
+                <div class="container">
+                    <div class="row">             
+                        <div class="col-4 offset-1 col-sm-2">
+                            <h5  style="color:black;">Links </h5>
+                            <ul class="list-unstyled">
+                                <li><a href="home.html">Home</a></li>
+                                <li><a href="About.html">About</a></li>
+                                <li><a href="menu.html">Menu</a></li>
+                                <li><a href="order.html">Order</a></li>
+                                <li><a href="Terms.html">Terms&Condition</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+              <div class="col-7 col-sm-5">
+                <h5 style="color:black;">Our Address</h5>
+                <address style="color:black;">
+                  PLOT NO-H1/5<br>
+                      Bombay Tower Bistupur , Jamshedpur <br>
+                        Jharkhand, INDIA<br>
+                        <i class="fa fa-phone fa-lg"></i>Radhika:<a href="tel:6299582858">6299582858</a> <br>
+                        <i class="fa fa-phone fa-lg"></i>Diya:<a href="tel:7814846846">7814846846</a> <br>
+                        <i class="fa fa-phone fa-lg"></i>Akshita:<a href="tel:8988370096">8988370096</a> <br>
+                  <i class="fa fa-envelope fa-lg"></i>: 
+                  <p style="color:black;">egrocery@gmail.com</p>
+               </address>
+            </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                    </div>
+                </div>
+           </div>
+           <div class="row justify-content-center">             
+                <div class="col-auto">
+                    <p style="color:black">© Copyright 2021 E-GROCERY</p>
+                </div>
+           </div>
+        </div>
+    </footer>
+           <script>
+        var menubtn=document.getElementById("menubtn")
+        var sideNav=document.getElementById("sideNav")
+        var menu=document.getElementById("menu")
+        sideNav.style.right="-250px";
+
+        menubtn.onclick=function(){
+            if(sideNav.style.right=="-250px"){
+                sideNav.style.right="0";
+                menu.src="./images/close.png";
+            }
+            else{
+                sideNav.style.right="-250px";
+                menu.src="./images/menu.png";
+            }
+        }
+    </script>
+    </body>
+</html>

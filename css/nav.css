@@ -1,0 +1,53 @@
+#sideNav{
+    width: 250px;
+    height: 100vh;
+    right: 0;
+    top:0;
+    background:#96c93d ;
+    z-index: 2;
+    position: fixed;
+    transition: 0.5s;
+}
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: bolder;
+}
+nav ul li a:hover{  
+    color:orange;   
+}
+#menubtn{
+    width: 50px;
+    height: 50px;
+    background: #96c93d;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    cursor: pointer;
+    z-index: 3;
+    border-radius: 5px;
+}
+#menubtn img{
+    width: 20px;
+    margin-top: 15px;
+}
+.footer{
+    background: linear-gradient(to right, #56ab2f, #a8e063);
+    margin: 0px auto;
+    padding: 20px 5px 20px 5px;
+
+}
+
+.footer a{
+text-decoration: none;
+color: black;
+}
+.footer a:hover
+{
+    color: cornsilk;
+}
